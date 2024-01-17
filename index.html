@@ -6,6 +6,7 @@
       <script defer src="/_vercel/insights/script.js"></script>
       <script async src="https://cdn.ampproject.org/v0.js"></script>
       <link rel="canonical" href="https://arcticfrenz.com/index.html" />
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif|PT+Sans" rel="stylesheet">
       <title>Arctic Frenz</title>
       <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
       <noscript>
@@ -15,32 +16,188 @@
          src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
       <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
       <style amp-custom>
+         html {
+         margin:0;
+         padding:0;
+         font-family: 'Droid Serif', serif;
+         }
          body { 
          width:100%;
          max-width:1280px;
          margin: 0 auto;
          text-align: center;
-         font-family: Helvetica;
+         font-family: 'Droid Serif', serif;
          }
-         h1 {
-         font-size: 1.5rem;
-         margin: 1rem 0.5rem;
+         ul {
+         margin:0;
+         padding:0;
+         font-family: 'Droid Serif', serif;
          }
          main {
          text-align: left;
          padding:0 0.5rem 0.5rem 0.5rem;
+         }
+         .logo {
+         text-align: right;
+         font-size:2.5rem;
+         color:#fff;
+         font-weight:bold;
+         font-family:Georgia, 'Times New Roman', serif;
+         }
+         .primary-nav li {
+         font-family: 'PT Sans', sans-serif;
+         }      
+         header {
+         background-color: #005689;
+         padding:0.5rem;
+         }
+         header li {
+         display: inline-block;
+         color: #fff;
+         font-size: 1.5rem;
+         line-height: 2.625rem;
+         padding-right: 10px;
+         font-family:Georgia, 'Times New Roman', serif;
+         }
+         h1 {
+         background-color: #eee;
+         color: #005689;
+         margin: 0;
+         padding:1rem 0.5rem;
+         font-family:Georgia, 'Times New Roman', serif;
+         }
+         h2 {
+         color: #005689;
+         margin: 0;
+         border-bottom: 1px solid #ddd;
+         margin:5px;
+         }
+         img.feature-img {
+         width: 100%;
+         }
+         p {
+         padding:0.5rem;
+         line-height: 1.5;
          }
          .ad-border {
          background-color: #444;
          color:#fff;
          text-align: center;
          }
+         figure {
+         margin:5px;
+         }
+         figcaption {
+         font-family: Georgia;
+         font-weight: bold;
+         }
+         .related-thumb{
+         display:flex;
+         align-items: center;
+         flex-wrap:nowrap;
+         }
+         .related-thumb amp-img {
+         min-width: 125px;
+         margin: 0;
+         }
          amp-fx-flying-carpet {
          background-color:#eee;
          }
+         footer {
+         color: #dcdcdc;
+         background: #484848;
+         padding:0.5rem;
+         }
+         .image-credit, .image-credit a {
+         color:#666;
+         }
+         .author {
+         color: #bbb;
+         display:block;
+         }
+         @media (min-width:50.01rem){
+         figure {
+         margin:20px 40px;
+         }  
+         .related-thumb {
+         flex-basis:25%;
+         flex-wrap:wrap;
+         }
+         .related-thumb amp-img,.related-thumb figcaption
+         {-ms-flex-preferred-size:100%;flex-basis:100%}
+         .related-items li {
+         width:25%;
+         } 
+         }
+         @media (min-width:35rem) and (max-width:50rem){
+         figure {
+         margin:20px 40px;
+         }  
+         .related-thumb {
+         flex-basis:25%;
+         flex-wrap:wrap;
+         }
+         .related-thumb amp-img,.related-thumb figcaption
+         {-ms-flex-preferred-size:100%;flex-basis:100%}
+         .related-items li {
+         width:50%;
+         } 
+         }
+         .related-thumb amp-img {
+         margin-right:5px;
+         }
+         .related-items {
+         display:flex;
+         flex-wrap: wrap;
+         list-style: none;
+         padding: 0.5rem 0 1rem 0;
+         }
+         .pull-quote-1{
+         font-size:1.5rem;
+         padding-left:1.5rem
+         }
+         .pull-quote-1::before {
+         content: '\00201C';
+         font-size: 8rem;
+         font-family: Georgia, serif;
+         position: absolute;
+         left: -0.5rem;
+         line-height: 7rem;
+         padding-left: 1rem;
+         color: #ff8c00;
+         }
+         svg.pull-quote {
+         fill:#f00;
+         }
+         .pull-parent {
+         display: flex;
+         }
+         .drop-caps::first-letter {
+         color: #903;
+         float: left;
+         font-family: Georgia;
+         font-size: 3.5rem;
+         line-height: 3rem;
+         padding-top: 5px;
+         padding-right: 8px;
+         padding-left: 3px;
+         }
+         .image-credit, .image-credit a {
+         color:#666;
+         }   
       </style>
    </head>
    <body>
+      <header>
+         <div class="logo">theampbook</div>
+         <nav>
+            <ul class="primary-nav">
+               <li>news</li>
+               <li>sports</li>
+               <li>arts</li>
+            </ul>
+         </nav>
+      </header>
       <h1>Vercel HTML Starter</h1>
       <main>
          <p>This page has a sticky ad—it sticks to the bottom of the page, and it's dismissable.</p>
@@ -85,5 +242,8 @@
             —Mark Twain
          </p>
       </main>
+      <footer>
+         privacy policy
+      </footer>
    </body>
 </html>
